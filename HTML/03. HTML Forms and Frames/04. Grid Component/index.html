@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University Grid</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+		body {font-family: sans-serif; font-size: 12px; color: #3b3b3b;}
+		table {width: 870px; border: 1px solid #a4abb2; border-radius: 10px; *border-collapse: collapse; border-spacing: 0;}
+		    
+		td, th {border-left: 1px solid #ccc; border-top: 1px solid #ccc; padding: 5px; text-align: left; font-weight: normal;}
+
+		thead tr:first-child th:first-child {background: #e7e9eb; border-top: none;}
+
+		thead tr:nth-child(2) th {background: url(img/gradient.gif) repeat-x;}
+
+		thead tr:nth-child(3) th {background: #dfe3e8;}
+
+		thead tr:nth-child(3) th:first-child input {width: 30px;}
+		thead tr:nth-child(3) th:nth-child(2) input {width: 130px;}
+		thead tr:nth-child(3) th:nth-child(3) input:first-child, thead tr:nth-child(3) th:nth-child(4) input, thead tr:nth-child(3) th:nth-child(5) input:first-child {width: 90px;}
+		thead tr:nth-child(3) th:nth-child(3) input:last-child, thead tr:nth-child(3) th:nth-child(5) input:last-child {margin: 0 0 -6px;}
+		thead tr:nth-child(3) th:nth-child(6) input:last-child {margin: 0 0 -4px;}
+
+		thead th {border-color: #a4abb2;}
+
+		td:first-child, th:first-child, tfoot td {border-left: none;}
+
+		tfoot td {background: #b9bec3 url(img/foot-bg.gif) repeat-x; height: 20px; vertical-align: center;}
+		tfoot td input {float: left; height: 22px; margin: 0 0 0 4px;}
+		tfoot td div {float: left;}
+		tfoot td div:first-child input,tfoot td div:nth-child(3) input {padding: 2px 0 0;}
+		tfoot td div:nth-child(2) {margin: 0 0 0 4px; padding: 6px 0 0;}
+		tfoot td a {padding: 3px 4px; color: #3b3b3b; text-decoration: none;}
+		tfoot td a:first-child {border: 1px solid #c95c05; border-radius: 3px;}
+		tfoot td:last-child {text-align: right;}
+
+		th:only-child {border-radius: 10px 10px 0 0;}
+		tr:last-child td:first-child {border-radius: 0 0 0 10px;}
+		tr:last-child td:last-child {border-radius: 0 0 10px 0;}
+
+	</style>
+</head>
+<body>
+	<table cellspacing="0" cellpadding="5">
+		<colgroup>
+			<col span="5" />
+			<col style="width: 80px;" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th colspan="6">
+					Drag a column header and drop it here to group by that column
+				</th>
+			</tr>
+			<tr>
+				<th>ProductID</th>
+				<th>Product name</th>
+				<th>Unit price</th>
+				<th>Quantity per unit</th>
+				<th>Units in stock</th>
+				<th>Discontinued</th>
+			</tr>
+			<tr>
+				<th>
+					<input type="text" name="productid" />
+				</th>
+				<th>
+					<input type="text" name="productname" />
+				</th>
+				<th>
+					<input type="text" name="price" /> <input type="image" src="img/btn.gif" alt="" name"priceBtn" width="22" />
+				</th>
+				<th>
+					<input type="text" name="quantity" />
+				</th>
+				<th>
+					<input type="text" name="stock" /> <input type="image" src="img/btn.gif" alt="" name"stockBtn" width="22" />
+				</th>
+				<th>
+					<input type="checkbox" name="check" /> <input type="image" src="img/btn.gif" alt="" name"checkBtn" width="22" />
+				</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="2">
+					<div>
+						<input type="image" src="img/mostleft.gif" alt="" width="22" name="mostLeft" />
+						<input type="image" src="img/left.gif" alt="" width="22" name="left" />
+					</div>
+					<div>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a> ...
+					</div>
+					<div>
+						<input type="image" src="img/right.gif" alt="" width="22" name="right" />
+						<input type="image" src="img/mostright.gif" alt="" width="22" name="mostRight" />
+					</div>
+					<div style="clear: both;"></div>
+				</td>
+				<td colspan="2">
+					Page size:
+					<select>
+						<option value="10">10</option>
+						<option value="20">20</option>
+					</select>
+				</td>
+				<td colspan="2">335104 items in 33511 pages</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.00</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Chang</td>
+				<td>$19.00</td>
+				<td>24 - 12 oz bottles</td>
+				<td>17</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Aniseed Syrup</td>
+				<td>$10.00</td>
+				<td>12 - 550 ml bottles</td>
+				<td>13</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Chef Anton's Cajun Seasoning</td>
+				<td>$22.00</td>
+				<td>48 - 6 oz jars</td>
+				<td>53</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Chef Anton's Gumbo Mix</td>
+				<td>$21.35</td>
+				<td>36 boxes</td>
+				<td>0</td>
+				<td><input type="checkbox" name="discontinued" disabled checked /></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Grandma's Boysenberry Spread</td>
+				<td>$25.00</td>
+				<td>12 - 8 oz jars</td>
+				<td>120</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Uncle Bob's Organic Dried Pears</td>
+				<td>$30.00</td>
+				<td>12 - 1 lb pkgs.</td>
+				<td>15</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Northwoods Cranberry Sauce</td>
+				<td>$40.00</td>
+				<td>12 - 12 oz jars</td>
+				<td>6</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Mishi Kobe Niku</td>
+				<td>$97.00</td>
+				<td>18 - 500 g pkgs.</td>
+				<td>29</td>
+				<td><input type="checkbox" name="discontinued" disabled checked/></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Ikura</td>
+				<td>$31.00</td>
+				<td>12 - 200 ml jars</td>
+				<td>31</td>
+				<td><input type="checkbox" name="discontinued" disabled /></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

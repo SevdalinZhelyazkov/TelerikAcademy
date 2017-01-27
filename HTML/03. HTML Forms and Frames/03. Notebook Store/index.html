@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notebook Store</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		body {font-family: Arial;}
+		table {margin: 0 auto;}
+		table:nth-child(1) {border: 2px solid black;}
+		table:nth-child(1) th {border-bottom: 2px solid black;}
+		a {color: #02C6F2; font-size: 20px;}
+		label {display: block; margin: 16px 0 8px;}
+		fieldset {margin: 0; padding: 0; border: none;}
+		legend {font-weight: bold;}
+		.laptop tr:nth-child(3) td:nth-child(1) {text-align: center;}
+		.title {position: relative; top: -13px; background: #fff; margin: 0 auto; font-weight: bold; width: 170px; text-align: center;}
+	</style>
+</head>
+<body>
+	<table cellspacing="0" cellpadding="10">
+		<colgroup>
+			<col />
+			<col style="width: 180px;" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th colspan="2">
+					<a href="#">Apple</a>
+					<a href="#">Toshiba</a>
+					<a href="#">Lenovo</a>
+					<a href="#">Dell</a>
+					<a href="#">Asus</a>
+					<a href="#">Acer</a>
+					<a href="#">HP</a>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<table cellpadding="5" cellspacing="10" border="2">
+						<tr>
+							<td>
+								<!-- ..because fieldtext is used for forms -->
+								<div class="title">Apple MacBook Air</div>
+								<table cellpadding="5" cellspacing="0" class="laptop">
+									<tr>
+										<td rowspan="2"><img src="img/laptop.jpg" alt="" width="138" height="86" /></td>
+										<td>64GB SSD</td>
+									</tr>
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<div class="title">Apple MacBook Air</div>
+								<table cellpadding="5" cellspacing="0" class="laptop">
+									<tr>
+										<td rowspan="2"><img src="img/laptop.jpg" alt="" width="138" /></td>
+										<td>64GB SSD</td>
+									</tr>
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title">Apple MacBook Air</div>
+								<table cellpadding="5" cellspacing="0" class="laptop">
+									<tr>
+										<td rowspan="2"><img src="img/laptop.jpg" alt="" width="138" height="86" /></td>
+										<td>64GB SSD</td>
+									</tr>
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<div class="title">Apple MacBook Air</div>
+								<table cellpadding="5" cellspacing="0" class="laptop">
+									<tr>
+										<td rowspan="2"><img src="img/laptop.jpg" alt="" width="138" /></td>
+										<td>64GB SSD</td>
+									</tr>
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="title">Apple MacBook Air</div>
+								<table cellpadding="5" cellspacing="0" class="laptop">
+									<tr>
+										<td rowspan="2"><img src="img/laptop.jpg" alt="" width="138" height="86" /></td>
+										<td>64GB SSD</td>
+									</tr>
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<div class="title">Apple MacBook Air</div>
+								<table cellpadding="5" cellspacing="0" class="laptop">
+									<tr>
+										<td rowspan="2"><img src="img/laptop.jpg" alt="" width="138" /></td>
+										<td>64GB SSD</td>
+									</tr>
+									<tr>
+										<td>2GB DDR</td>
+									</tr>
+									<tr>
+										<td>1300 USD</td>
+										<td>Intel Core i5</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="vertical-align: center;">
+					<form method="post" action="filter">
+						<fieldset>
+							<legend>Filters:</legend>
+							
+							<label for="price">Min price: 500 USD</label>
+							<input type="range" min="500" max="8000" id="price" />
+							
+							<label for="price">Max price: 1500 USD</label>
+							<input type="range" min="600" max="8000" id="price" />
+							
+							<label for="price">Min RAM: 4 GB</label>
+							<input type="range" min="4" max="32" id="price" />
+							
+							<label for="price">Max RAM: 8 GB</label>
+							<input type="range" min="5" max="32" id="price" />
+						</fieldset>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

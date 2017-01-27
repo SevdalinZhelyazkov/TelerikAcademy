@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		body {font-family: 'Times New Roman';}
+		table, th, td {border-collapse: collapse;}
+		td {border: 1px solid #000;}
+		td:nth-child(1) {font-weight: bold; text-align: center;}
+		tr:last-child td:last-child {background: #B4DBF0;}
+	</style>
+</head>
+<body>
+	<table cellspacing="0" cellpadding="2" border="0">
+		<colgroup>
+			<col style="width: 150px;"/>
+			<col />
+		</colgroup>
+		<form name="info" method="post">
+			<tr>
+				<td><label for="lastName">Last Name</label></td>
+				<td><input type="text" name="lastName" id="lastName" required="true" /></td>
+			</tr>
+			<tr>
+				<td><label for="firstName">First Name</label></td>
+				<td><input type="text" name="firstName" id="firstName" required="true" /></td>
+			</tr>
+			<tr>
+				<td><label for="address">Address</label></td>
+				<td><textarea rows="4" cols="21" id="address" required="true"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="city">City</label></td>
+				<td><input type="text" name="city" id="city" required="true" /> <label for="state">State:</label> <input type="text" name="state" id="state" style="width: 50px;" /></td>
+			</tr>
+			<tr>
+				<td><label for="postal">ZIP/Postal code</label></td>
+				<td><input type="text" name="postal" id="postal" style="width: 60px;" required="true" /></td>
+			</tr>
+			<tr>
+				<td><label for="country">Country</label></td>
+				<td>
+					<select name="country" id="country">
+						<option value="value1">Bulgaria</option>
+						<option value="value2">Russia</option>
+						<option value="value3">Germany</option>
+						<option value="value4">United Kingdom</option>
+						<option value="value5">United States of America</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="phone">Phone (country code, area code, number)</label></td>
+				<td>
+					(+<input type="text" name="country" id="phone" style="width: 50px;" />)
+					<input type="text" name="country" style="width: 50px;" />
+					<input type="text" name="country" style="width: 100px;" />
+				</td>
+			</tr>
+			<tr>
+				<td><label for="email">E-mail</label></td>
+				<td><input type="email" required="true" id="email" /></td>
+			</tr>
+			<tr>
+				<td><label for="birthdate">Birth Date</label></td>
+				<td><input type="text" name="birthDate" id="birthdate" placeholder="дд.мм.гггг г."  required="true"/></td>
+			</tr>
+			<tr>
+				<td><label for="gender">Gender</label></td>
+				<td>
+					<select name="gender" id="gender">
+						<option value="value1">Male</option>
+						<option value="value2">Female</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="sdate">Starting Date</label></td>
+				<td>
+					<input type="radio" name="sdate" value="Spring 2015" /> Spring 2015
+					<input type="radio" name="sdate" value="Summer 2015" /> Summer 2015
+				</td>
+			</tr>
+			<tr>
+				<td><label for="comque">Comments/Questions</label></td>
+				<td><textarea rows="4" cols="21" id="comque"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" name="submit" value="Submit" />
+					<input type="reset" name="reset" value="Clean this form" />
+				</td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
