@@ -1,0 +1,97 @@
+body {
+    font-family: Arial;
+}
+
+#wrap {
+    width: 740px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#top {
+    margin: 0 25px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#top a {
+    color: #02C6F2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main::after {
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#main > div:first-child {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 534px;
+}
+#main > div:first-child::after {
+	content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+div.laptop {
+	position: relative;
+    float: left;
+    width: 245px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+div.laptop div:nth-child(2) {
+    float: left;
+    width: 138px;
+    margin: 0 10px 0 0;
+    text-align: center;
+}
+
+div.laptop div:nth-child(3) {
+	float: left;
+	width: 97px;
+	line-height: 39px;
+}
+
+div.laptop::after {
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#main > div:last-child {
+    float: left;
+    margin: 80px 10px 10px 0;
+}
+
+#main > div:last-child form {
+	width: 160px;
+	line-height: 40px;
+}
+
+.title {
+    position: relative;
+    top: -16px;
+    background: #fff;
+    margin: 0 auto;
+    font-weight: bold;
+    line-height: 26px;
+    width: 170px;
+    text-align: center;
+}

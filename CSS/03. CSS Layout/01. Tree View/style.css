@@ -1,0 +1,31 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li ul {
+    padding: 0 0 0 10px;
+    display: none;
+}
+
+nav ul li:hover {
+    display: initial;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul li:hover ul {
+    display: block;
+    color: #999;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

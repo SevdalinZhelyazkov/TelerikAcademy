@@ -1,0 +1,150 @@
+body {
+	margin: 0;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	background: #808080;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 0;
+	padding: 0 5px;
+}
+
+#wrap {
+	background: #f1f1f1;
+	width: 790px;
+	margin: 50px auto 0;
+	padding: 2px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+#wrap::after {
+	content: '';
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+nav {
+	float: left;
+	width: 140px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav > a {
+	display: inline-block;
+	margin: 12px 0 0;
+	font-weight: bold;
+}
+
+nav img {
+	margin: 0 4px 0 0;
+}
+
+nav ul {
+	margin: 12px 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul li:first-child {
+	color: #a10200;
+	font-weight: bold;
+}
+
+section {
+	float: left;
+	background: #fff;
+	width: 495px;
+	padding: 4px;
+	border: 1px solid #818181;
+	box-sizing: border-box;
+}
+
+section a, aside div a {
+	color: #a10200;
+	font-family: Arial;
+}
+
+article p img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+section > article:first-of-type p {
+	font-weight: bold;
+}
+
+section > article:first-of-type p a {
+	font-weight: normal;
+}
+
+article p::after {
+	content: '';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+button {
+	background: #fff;
+	text-align: center;
+	font-size: 11px;
+	padding: 2px 0;
+	width: 100px;
+	border: 1px solid black;
+}
+
+button.left {
+	background: url('img/arrow-left.gif') no-repeat 3px 4px;
+}
+
+button.right {
+	background: url('img/arrow-right.gif') no-repeat right 3px top 4px;
+}
+
+aside {
+	float: left;
+	width: 147px;
+	margin: 0 0 0 2px;
+}
+
+aside div {
+	background: #fff;
+	margin: 0 0 2px;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #808080;
+}
+
+aside div a {
+	display: block;
+}
+
+aside h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+aside input[type=text] {
+	width: 90px;
+	margin: 2px 0;
+}

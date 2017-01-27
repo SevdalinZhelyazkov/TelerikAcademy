@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="head">
+            <div>
+                Calculator
+            </div>
+            <div>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <a href="#">View</a>
+                <a href="#">Edit</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="section">
+                <textarea disabled>8854455</textarea>
+                <div class="numbers">
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                63
+                            </td>
+                            <td colspan="3">
+                                47
+                            </td>
+                            <td>
+                                32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>1000</td>
+                            <td>0111</td>
+                            <td>0001</td>
+                            <td>1011</td>
+                            <td>1011</td>
+                            <td>0111</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                31
+                            </td>
+                            <td colspan="3">
+                                15
+                            </td>
+                            <td>
+                                0
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <table cellspacing="5" cellpadding="0">
+                        <tr>
+                            <td rowspan="3" class="box">
+                                <form method="POST" action="">
+                                    <input type="radio" name="number" id="Hex" value="Hex" />
+                                    <label for="Hex">Hex</label>
+                                    <br />
+                                    <input type="radio" name="number" id="Dec" value="Dec" checked />
+                                    <label for="Dec">Dec</label>
+                                    <br />
+                                    <input type="radio" name="number" id="Oct" value="Oct" />
+                                    <label for="Oct">Oct</label>
+                                    <br />
+                                    <input type="radio" name="number" id="Bin" value="Bin" />
+                                    <label for="Bin">Bin</label>
+                                </form>
+                            </td>
+                            <td>
+                                <button type="button">&nbsp;</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">Mod</button>
+                            </td>
+                            <td>
+                                <button type="button">A</button>
+                            </td>
+                            <td>
+                                <button type="button">MC</button>
+                            </td>
+                            <td>
+                                <button type="button">MR</button>
+                            </td>
+                            <td>
+                                <button type="button">MS</button>
+                            </td>
+                            <td>
+                                <button type="button">M+</button>
+                            </td>
+                            <td>
+                                <button type="button">M-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="dark">(</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">)</button>
+                            </td>
+                            <td>
+                                <button type="button">B</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">←</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark active">CE</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">C</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">±</button>
+                            </td>
+                            <td>
+                                <button type="button">√</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="dark">RoR</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">RoL</button>
+                            </td>
+                            <td>
+                                <button type="button">C</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">7</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">8</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">9</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">/</button>
+                            </td>
+                            <td>
+                                <button type="button">%</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="box">
+                                <form method="GET" action="">
+                                    <input type="radio" name="number" id="Qword" value="Qword" checked />
+                                    <label for="Qword">Qword</label>
+                                    <br />
+                                    <input type="radio" name="number" id="Dword" value="Dword" />
+                                    <label for="Dword">Dword</label>
+                                    <br />
+                                    <input type="radio" name="number" id="Word" value="Word" />
+                                    <label for="Word">Word</label>
+                                    <br />
+                                    <input type="radio" name="number" id="Byte" value="Byte" />
+                                    <label for="Byte">Byte</label>
+                                </form>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">Or</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">Xor</button>
+                            </td>
+                            <td>
+                                <button type="button">D</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">4</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">5</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">6</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">*</button>
+                            </td>
+                            <td>
+                                <button type="button">1/x</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="dark">Lsh</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">Rsh</button>
+                            </td>
+                            <td>
+                                <button type="button">E</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">1</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">2</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">3</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">-</button>
+                            </td>
+                            <td rowspan="2">
+                                <button type="button" class="dark">=</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="dark">Not</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">And</button>
+                            </td>
+                            <td>
+                                <button type="button">F</button>
+                            </td>
+                            <td colspan="2">
+                                <button type="button" class="light">0</button>
+                            </td>
+                            <td>
+                                <button type="button" class="light">.</button>
+                            </td>
+                            <td>
+                                <button type="button" class="dark">+</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

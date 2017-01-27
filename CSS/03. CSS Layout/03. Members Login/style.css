@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia;
+	color: #a4a4a4;
+}
+
+#wrap {
+	width: 660px;
+	margin: 150px auto 0;
+	background: #3b3b3b;
+	border: 1px solid #806850;
+	border-radius: 10px;
+}
+
+#login {
+	background: url('img/monitor.png') no-repeat 10px 10px, url('img/bg.gif') no-repeat bottom;
+	height: 48px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px 0 0 64px;
+}
+/*
+header div {
+	float: left;
+	width: 200px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid red;
+}*/
+
+form {
+	display: inline-block;
+}
+
+input {
+	margin: 0 10px;
+}
+
+input[type=submit] {
+	background: url('img/submit.png') no-repeat;
+	width: 58px;
+	height: 30px;
+	color: #fff;
+	border: 0;
+}
+
+input[type=text] {
+	width: 148px;
+	padding: 3px 4px;
+	border: 1px solid #819db3;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+}
+
+section {
+	padding: 0 12px 12px;
+}
+
+h1 {
+	font-weight: normal;
+	color: #f1d917;
+}
+
+p {
+	margin: 0;
+	font-family: Verdana;
+	font-size: 13px;
+}
+
+p span {
+	color: #fff;
+}

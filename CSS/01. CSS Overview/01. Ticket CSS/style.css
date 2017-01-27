@@ -1,0 +1,46 @@
+table {
+	background: #595959;
+	width: 304px;
+	color: #bbb;
+	font-size: 11px;
+	font-family: Arial;
+}
+
+table a {
+	color: #e2d895;
+	text-decoration: none;
+}
+
+table a:hover {
+	text-decoration: underline;
+}
+
+table td {
+	padding: 6px 3px;
+	vertical-align: top;
+}
+
+table tr:first-child td {
+	font-size: 16px;
+	padding-top: 8px;
+}
+
+table tr:not(:first-child) td:first-child {
+	color: #eee;
+	font-style: italic;
+}
+
+table tr:nth-child(2) td:last-child {
+	color: #e2d895;
+	line-height: 14px;
+}
+
+table tr:nth-child(2) td:last-child span {
+	color: red;
+	font-weight: bold;
+}
+
+table tr:last-child td:last-child {
+	color: #e46b1d;
+	font-weight: bold;
+}
