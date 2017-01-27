@@ -1,3 +1,3 @@
-# HTML Basics Course Homeworks
+# HTML Basics Course
 
 More information about this course at [HTML Basics](https://github.com/TelerikAcademy/HTML/).
